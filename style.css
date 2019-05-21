@@ -1,0 +1,142 @@
+html{
+	background-color: dodgerblue; 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+/* MODAL */
+.simple-modal {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+  height: 600px;
+  overflow: hidden;
+  margin: 0;
+  background-color: #fff;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+  background-color: #ff6260;
+  display: block;
+  z-index: 1;
+}
+
+a {
+  color: gold;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 50px;
+  font-weight: 100;
+  /*margin: 10px 30px 0px 0px;*/
+}
+#form {
+  position: relative;
+  top: 25%;
+  transform: translateX(25%);
+}
+
+#btn-go {
+  position: absolute;
+  bottom: 20%;
+  left: 40%;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: none;
+  font-size: 50px;
+  background-color: gold;
+  color: #ff6260;
+  outline: none;
+}
+#btn-go:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: gold;
+  background-color: dodgerblue;
+}
+
+input {
+  width: 200px;
+  height: 35px;
+  padding-left: 18px;
+  font-size: 30px;
+  font-weight: 80;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+}
+
+#close-btn {
+  color: #ccc;
+  float: right;
+  font-size: 2em;
+  margin-right: 5px;
+}
+
+#close-btn:hover {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* GAME */
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 320px;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  grid-gap: 10px;
+  background-color: gold;
+  font-family: "Comic Sans MS", cursive;
+}
+
+.cell {
+  background-color: #fff;
+  font-size: 5rem;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.endgame {
+  display: none;
+  width: 200px;
+  top: 120px;
+  background-color: gold;
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-size: 2em;
+}
+
+.replay-btn {
+  border-radius: 5%;
+  border: none;
+  font-size: 2rem;
+  background-color: gold;
+  color: #ff6260;
+  outline: none;
+}
+.replay-btn:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: gold;
+  background-color: #ff6260;
+}
